@@ -13,7 +13,7 @@
             <h1 v-show="ended">Burst? Restart to Punch Again! </h1>
 
             <!-- bag image -->
-            <div id="bag" v-bind:class="{ burst: ended }"></div>
+            <div id="bag" v-on:click="punch" v-bind:class="{ burst: ended }"></div>
 
             <!-- bag health bar -->
             <div id="bag-health">
